@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<% var data = {
+  title: "Test page"
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
 
-    <link rel="shortcut icon" href="favicon/favicon.ico">
-	<link rel="stylesheet" href="css/style.bundle.css">
-	<title>New-repository</title>
-</head>
-<body>
-	
-</body>
-</html>
+<%= _.template(require('./../includes/content.html'))(data) %>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
