@@ -1,17 +1,141 @@
-Html Webpack Plugin:
-<pre>
-  ReferenceError: title is not defined
-  
-  - lodash.templateSources[0]:9 eval
-    lodash.templateSources[0]:9:10
-  
-  - second.html:95 
-    F:/new-repository/new-repository/src/html/views/second.html:95:45
-  
-  - second.html:99 module.exports
-    F:/new-repository/new-repository/src/html/views/second.html:99:3
-  
-  - index.js:284 Promise.resolve.then
-    [new-repository]/[html-webpack-plugin]/index.js:284:18
-  
-</pre>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Second page</title>
+    <link rel="stylesheet" href="css/style.bundle.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="slick-slider">
+          <div class="item">
+            <div class="item-img" style="background-image:url(../img/img1.jpg);">
+              <div class="item-text-button">
+                <span class="item-text"> web & graphic designer </span> <a class="button-white" href="#">learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-img" style="background-image:url(../img/img1.jpg);">
+              <div class="item-text-button">
+                <span class="item-text"> web & graphic designer </span> <a class="button-white" href="#">learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-img" style="background-image:url(../img/img1.jpg);">
+              <div class="item-text-button">
+                <span class="item-text"> web & graphic designer </span> <a class="button-white" href="#">learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <div class="header-bottom_content">
+            <div class="logo-box"><img src="img/logo.png" class="logo" alt="focal" /></div>
+            <nav class="nav">
+              <a class="navbar-toggler" href="#">Menu</a>
+              <ul class="nav-collapse">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">skills</a></li>
+                <li><a href="#">resume</a></li>
+                <li><a href="#">testimonial</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">contact me</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">Second страница.</div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-title">Contact Me</div>
+            <div class="footer-description">
+              Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute
+              disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.
+            </div>
+            <div class="footer-contacts">
+              <div class="footer-contacts_address">
+                <address class="address">122 33rd Street East<br />Saskatoon, SK <br />S7K 1R9</address>
+                <div class="footer-contacts-get">
+                  <dl>
+                    <dt>Email:</dt>
+                    <dd>info@focal.com</dd>
+                    <dt>Phone:</dt>
+                    <dd>1-306-222-2323</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="form-container">
+              <div class="form">
+                <div class="input-box">
+                  <form id="form" method="POST">
+                    <div class="input-box">
+                      <input
+                        style="display:none;"
+                        type="text"
+                        name="Заявка от соискателя"
+                        value="Предложение/Вопрос от соискателя"
+                      />
+                      <label for="name-visa">Name* </label>
+                      <input class="form-control" type="text" name="Имя" id="name-visa" required />
+                      <label for="email-visa">Email Address* </label>
+                      <input class="form-control" type="email" name="E-mail" id="email-visa" required />
+                      <label for="ask-visa">Your Question* </label>
+                      <textarea
+                        class="form-control"
+                        name="Вопрос"
+                        id="ask-visa"
+                        placeholder="Задайте интересующий Вас вопрос"
+                        required
+                      />
+                    </div>
+                    <div class="button-box"><button class="button" type="submit">Отправить</button></div>
+                  </form>
+                  <!-- <div class="overlay js-overlay-thank-you">
+                                           <div class="popup js-thank-you">
+                                             <h3>Спасибо за вопрос. Менеджер свяжется с Вами через несколько минут.</h3>
+                                               <div class="close-popup js-close-thank-you"></div>
+                                           </div>
+                        </div>  -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-content">
+            <div class="footer-title">Copyright 2014 Focal - Built With Passion</div>
+            <ul class="footer-list">
+              <li><a href="#" class="icon-twitter"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
