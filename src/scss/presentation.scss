@@ -1,0 +1,151 @@
+.folder-presentation {
+    display: flex;
+    overflow: hidden;
+    .img-box__content {
+        background-size: cover;
+        overflow: hidden;
+        width: 40%;
+        
+    }
+    .about-me__content {
+        width: 60%;
+        .about-me {
+            width: 100%;
+        }
+        }
+}
+ 
+.img-box {
+    background-color: $section-secondary;
+    overflow: hidden;
+}
+
+.img-box, .image {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
+.image {
+    margin: 0 auto;
+}
+.about-me {
+    background-color: $section-secondary;
+    padding: 100px;
+    color: $main-color;
+    font-size: $main-font-size;
+    .about-me__block-first {
+        padding-right: 120px;
+    }
+}
+
+.about-me__title {
+    text-transform: uppercase;
+    color: $main-title-color;
+    margin-bottom: 50px;
+    font-size: $font-size-title;
+    font-weight: 700;
+}
+
+.about-me__description {
+    p {
+        margin-bottom: 45px;
+    }
+}
+.about-me__block-second {
+    padding: 35 0 70px;
+    display: flex;
+    margin-left: -25px;
+    margin-left: -25px;
+    flex-wrap: wrap;
+}
+
+.item-box {
+    width: 50%;
+    padding: 25px;
+    position: relative;
+    & > * {
+        padding-left: 70px; 
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 40px;
+        left: 25px;
+        background: url('../img/sprites.png') no-repeat 0 0;
+	    width: 41px;
+        height: 41px;
+    }
+    &:nth-child(2):before {
+        background: url('../img/sprites.png') no-repeat -51px 0;
+	    width: 31px;
+	    height: 41px;
+    }
+    &:nth-child(3):before {
+        background: url('../img/sprites.png') no-repeat  -96px -1px;
+	    width: 36px;
+	    height: 46px;
+    }
+    &:nth-child(4):before {
+        background: url('../img/sprites.png') no-repeat  -140px -2px;
+	    width: 37px;
+	    height: 36px;
+    }
+}
+   
+.item-title {
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    color: $main-title-color;
+    font-weight: 700;
+    margin-bottom: 1.625rem;
+    position: relative;
+}
+
+@media (max-width: 1400px) {
+    .about-me {
+        padding: 50px 100px;
+        .about-me__block-first {
+            padding-right: 0;
+        }
+    }
+}
+@media (max-width: 1380px) {
+    .folder-presentation {
+        flex-direction: column; 
+         .img-box__content {
+             display: none;
+         } 
+         .about-me__content {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+  .about-me__title {
+    text-align: center;
+}
+.about-me__block-second {
+    flex-direction: column;
+    .item-box {
+        width: 100%;
+    }
+  }
+}
+@media (max-width: 700px) {
+    .about-me {
+        padding: 50px 60px;
+    }
+}
+
+@media (max-width: 535px) { 
+.about-me {
+    padding: 50px 35px;
+  }
+}
