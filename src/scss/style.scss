@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $font-stack: -apple-system, BlinkMacSystemFont,Roboto,'Open Sans','Helvetica Neue',sans-serif;
 $main-text-color: #919191;
 $section-secondary: #f2f2f1;
@@ -29,3 +30,36 @@ $secondary-decorate-color: #2ecc71;
 @import 'popup';
 
 
+=======
+$font-stack: -apple-system, BlinkMacSystemFont,Roboto,'Open Sans','Helvetica Neue',sans-serif;
+$main-text-color: #919191;
+$section-secondary: #f2f2f1;
+$main-color: #919191;
+$main-title-color: #566366;
+$main-font-size: 1.125rem;
+$font-size-title:1.875rem;
+$secondary-decorate-color: #2ecc71;
+@import "~bootstrap/scss/bootstrap";
+
+
+
+@import 'header';
+@import 'main';
+@import 'button';
+@import 'slick';
+@import 'slick-theme';
+@import 'section-white';
+@import 'about';
+@import 'presentation';
+@import 'skills';
+@import 'resume';
+@import 'education';
+@import 'experience';
+@import 'second-slick';
+@import 'portfolio';
+@import 'footer';
+@import 'animation';
+@import 'popup';
+
+
+>>>>>>> d90bf2cc31d23426c9a9e7e7968398fafc190d59

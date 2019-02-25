@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .portfolio-title {
     font-size: 1.875rem;
     text-align: center;
@@ -112,3 +113,119 @@
      } 
  }
  
+=======
+.portfolio-title {
+    font-size: 1.875rem;
+    text-align: center;
+    font-weight: 700;
+    color: $main-title-color;
+    font-family: "Poboto-Bold", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.portfolio-description {
+    max-width: 1035px;
+    margin: 0 auto 95px;
+    text-align: center;
+}
+.portfolio-content {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -20px;
+   margin-right: -20px;
+   .portfolio-item, .portfolio-item-hover {
+       width: 33.33%;
+       padding: 20px;
+       overflow: hidden;   
+   }
+   .portfolio-item-hover {
+    position: relative; 
+    transition: all 0.3s ease;
+       &:first-child:after {
+           position: absolute;
+           content: '';
+           top:0px;
+           bottom:0px;
+           right: 0px;
+           left: 0px;
+           background-color: rgba(37, 46, 48, 0.5);    
+       }
+       &:first-child {
+          position: relative;
+       }
+       &:hover:after {
+           position: absolute;
+           content: "";
+           top: 50%;
+           left: 50%;
+           width: 49px;
+	       height: 49px; 
+           transform: translate(-50%, -50%);
+           background: url('../img/sprites.png') no-repeat -474px -55px;
+       }
+       &:hover:before {
+           position: absolute;
+           content: "";
+           top: 20px;
+           left: 20px;
+           bottom: 20px;
+           right: 20px;
+           background-color: rgba(46, 165, 99, 0.5);
+       }
+       img {
+           width: 100%;
+           height: auto;    
+       }
+   }
+}
+ .portfolio-item.black {
+   position: relative;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .block-category {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        padding: 40px;
+     .category-title {
+        color: #fff;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+   }
+ }
+ .list-category {
+     li {
+         a {
+            color: $main-color;
+         }
+     }   
+ }
+
+.list-category li a.active {
+     color: #fff;
+ }
+ @media (max-width: 968px) {
+     .portfolio-content {
+        .portfolio-item {
+            width: 50%;
+        }
+     } 
+     .portfolio-description { 
+        margin: 0 auto 30px;
+     }
+ }
+ @media (max-width: 670px) {
+    .portfolio-content {
+        justify-content: center;
+        .portfolio-item {
+            width: 90%;
+        }
+     } 
+ }
+ 
+>>>>>>> d90bf2cc31d23426c9a9e7e7968398fafc190d59

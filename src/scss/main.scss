@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: 'Roboto-Regular';
     font-style: normal;
@@ -107,4 +108,115 @@
   .active {
     color: #fff;
   } 
+=======
+@font-face {
+    font-family: 'Roboto-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Roboto-Regular.ttf);
+  }
+  @font-face {
+    font-family: 'Roboto-Bold';
+    font-style: bold;
+    font-weight: 700;
+    src: url(../fonts/Roboto-Bold.ttf);
+  }
+  @font-face {
+    font-family: 'Roboto-Italic';
+    font-style: italic;
+    font-weight: 700;
+    src: url(../fonts/Roboto-Italic.ttf);
+  }
+  @font-face {
+    font-family: 'icomoon';
+    font-style: italic;
+    font-weight: 700;
+    src: url(../fonts/icomoon.ttf);
+  }
+  
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?gi273s');
+    src:  url('../fonts/icomoon.eot?gi273s#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?gi273s') format('truetype'),
+      url('../fonts/icomoon.woff?gi273s') format('woff'),
+      url('../fonts/icomoon.svg?gi273s#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  a {
+    text-decoration: none;
+}
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-pinterest:before {
+    content: "\e900";
+  }
+  .icon-social-facebook:before {
+    content: "\e901";
+    font-size: 24px;
+    line-height: 14px;
+    margin-left: -3px;
+  }
+  .icon-linkedin1:before {
+    content: "\e905";
+  }
+  .icon-google1:before {
+    content: "\e903";
+  }
+  .icon-basketball:before {
+    content: "\e904";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-linkedin:before {
+    content: "\eaca";
+  }
+  .icon-pinterest1:before {
+    content: "\ead1";
+  }
+  
+  body {
+    font-family: $font-stack;
+    color: $main-text-color;
+    #logo {
+      width: 10rem;
+    }
+    .container {
+      img {
+        width: 20rem;
+      }
+    }
+  }
+  .container {
+    max-width: 1200px;
+  }
+  ul, p {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .active {
+    color: #fff;
+  } 
+>>>>>>> d90bf2cc31d23426c9a9e7e7968398fafc190d59
   
