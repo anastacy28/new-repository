@@ -1,0 +1,38 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+    justify-content: center;
+    .about-item {
+        width: 33.33%;
+        padding: 0 20px;
+        margin-bottom: 35px;
+    }
+}
+
+.about-item_title {
+    margin-bottom: 3.125rem;
+    font-size: 1.875rem;
+    color: #566366;
+    text-transform: uppercase;
+    font-weight: 700; 
+}
+
+@media (max-width: 900px) {
+    .about {
+        .about-item {
+            width: 50%;
+        }
+    }
+    .about-me__title {
+        text-align: center;
+    }
+}
+@media (max-width: 548px) {
+    .about {
+        .about-item {
+            width: 90%;
+        }
+    }
+}
